@@ -85,7 +85,9 @@ html {
 body {
   background: var(--white);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* REFUSED STYLES */
 
 .container {
@@ -463,6 +465,98 @@ body {
 
     .btn-group {
       gap: 20px;
+    }
+  }
+}
+
+.about {
+  padding: 2rem 0;
+
+  .container {
+    text-align: center;
+
+    .section-subtitle {
+      font-size: 15px;
+      font-family: var(--ff-poppins);
+    }
+
+    .section-title {
+      font-family: var(--ff-abril);
+      text-transform: uppercase;
+      margin: 1rem 0;
+      color: var(--green-dark);
+    }
+    .section-description {
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  .container {
+    margin-top: 2rem;
+
+    &.grid {
+      display: grid;
+      gap: 1.5rem;
+
+      .about-card {
+        display: grid;
+        row-gap: 1rem;
+        background-color: #f1f1f1;
+        box-shadow: 0 5px 40px rgba(0, 0, 0, 0.07);
+        border-bottom: 5px solid transparent;
+        transition: all 0.3s ease-out;
+        padding: 2rem 1.5rem;
+        border-radius: 7px;
+        text-align: center;
+
+        &:hover {
+          transform: scale(1.04);
+          border-bottom: 5px solid var(--green-dark);
+        }
+
+        .about-description {
+          text-align: center;
+          font-size: 12px;
+          font-weight: 300;
+        }
+
+        .about-title {
+          font-family: var(--ff-abril);
+          color: var(--green-dark);
+          font-size: var(--fs-3);
+        }
+
+        .about-img {
+          width: 70px;
+          height: 70px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 580px) {
+    .container {
+      &.grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      &.grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      &.grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
     }
   }
 }

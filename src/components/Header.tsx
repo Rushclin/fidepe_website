@@ -98,7 +98,7 @@ const Header = () => {
               </li>
 
               <li>
-                <Link href="#" className="navbar_link">
+                <Link href="#about" className="navbar_link">
                   a propos de nous
                 </Link>
               </li>
