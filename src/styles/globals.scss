@@ -470,7 +470,7 @@ html {
 }
 
 .about {
-  padding: 2rem 0;
+  padding-block: 4rem;
 
   .container {
     text-align: center;
@@ -557,6 +557,34 @@ html {
       &.grid {
         grid-template-columns: repeat(4, 1fr);
       }
+    }
+  }
+}
+
+.contact {
+  background: var(--green-dark);
+  padding-block: 5rem;
+  color: var(--white);
+
+  .section-text {
+    font-size: var(--fs-5);
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+
+    .section-title {
+      font-family: var(--ff-abril);
+      font-size: 30px;
+      text-transform: uppercase;
+      margin: 1rem 0;
+    }
+
+    .btn {
+      margin-bottom: 3rem;
     }
   }
 }
