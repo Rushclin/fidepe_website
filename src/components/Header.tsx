@@ -99,6 +99,12 @@ const Header = () => {
 
               <li>
                 <Link href="#" className="navbar_link">
+                  a propos de nous
+                </Link>
+              </li>
+
+              <li>
+                <Link href="#" className="navbar_link">
                   gallerie
                 </Link>
               </li>
@@ -112,12 +118,6 @@ const Header = () => {
               <li>
                 <Link href="#" className="navbar_link">
                   blogs
-                </Link>
-              </li>
-
-              <li>
-                <Link href="#" className="navbar_link">
-                  a propos de nous
                 </Link>
               </li>
             </ul>
